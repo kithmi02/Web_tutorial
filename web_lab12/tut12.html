@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Registration Form</h1>
+<form action="process.php" method="post">
+<input type="text" name="firstname" placeholder="First Name">
+<input type="text" name="lastname" placeholder="Last Name">
+<input type="text" name="username" placeholder="Username">
+<input type="password" name="password" placeholder="Password">
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<select name="academicyear">
+<option value="1st year">1st Year</option>
+<option value="2nd year">2nd Year</option>
+<option value="3rd year">3rd Year</option>
+<option value="4th year">4th Year</option>
+</select>
+<input type="email" name="email" placeholder="Email">
+<input type="tel" name="phone" placeholder="Phone">
+<input type="submit" value="Submit">
+</form>
+</div>
+</body>
+</html>
