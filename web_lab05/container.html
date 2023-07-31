@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    <h1>Sign Up</h1>
+    <div class="container">
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" id="first_name" required><br>
+      <label for="last_name">Last Name</label>
+      <input type="text" name="last_name" id="last_name" required><br>
+     <label for="birthdate">Date Of Birth:</label>
+  <select id="date" name="date">
+    <option value="Date">Date</option>
+    <option value="saab">01</option>
+    <option value="fiat">02</option>
+    <option value="audi">03</option>
+  </select>
+<select id="month" name="month">
+    <option value="month">Month</option>
+    <option value="month1">January</option>
+    <option value="month2">February</option>
+    <option value="month3">March</option>
+   
+  </select>
+	<select id="year" name="year">
+    <option value="year">Year</option>
+    <option value="year1">2000</option>
+    <option value="year2">2001</option>
+    <option value="year3">2002</option>
+   
+  </select><br>
+		
+      <label for="gender">Gender</label>
+		 <input type="radio" id="male" name="male" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="female" value="female">
+  <label for="female">Female</label><br>
+<br>
+      <label for="country">Country</label>
+      <input type="text" name="country" id="country" required><br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required><br>
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" required><br>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required><br>
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" name="confirm_password" id="confirm_password" required><br>
+      <label for="terms_of_use">Agree to the Terms of Use</label>
+      <input type="checkbox" name="terms_of_use" id="terms_of_use" required>
+     
+<button type="submit">Submit</button>
+ <button type="submit">Cancel</button>
+    
+  </form>
+</body>
+</html>
