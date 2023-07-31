@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grade Calculation</title>
+</head>
+<body>
+    <h2>Enter 5 marks:</h2>
+    <input type="number" id="mark1" placeholder="Mark 1">
+    <input type="number" id="mark2" placeholder="Mark 2">
+    <input type="number" id="mark3" placeholder="Mark 3">
+    <input type="number" id="mark4" placeholder="Mark 4">
+    <input type="number" id="mark5" placeholder="Mark 5">
+    <button onclick="calculateGrade()">Grade</button>
+
+    <script>
+        function calculateGrade() {
+            // Get the input values from the user
+            var mark1 = parseFloat(document.getElementById("mark1").value);
+            var mark2 = parseFloat(document.getElementById("mark2").value);
+            var mark3 = parseFloat(document.getElementById("mark3").value);
+            var mark4 = parseFloat(document.getElementById("mark4").value);
+            var mark5 = parseFloat(document.getElementById("mark5").value);
+
+            // Calculate the total and average of the marks
+            var total = mark1 + mark2 + mark3 + mark4 + mark5;
+            var average = total / 5;
+
+            // Display the total and average
+            console.log("Total marks: " + total);
+            console.log("Average marks: " + average);
+
+            // Check if the average is greater than 30 and display the alert message accordingly
+            if (average > 30) {
+                alert("Congrats! You passed.");
+            } else {
+                alert("Better luck next time.");
+            }
+        }
+    </script>
+</body>
+</html>
