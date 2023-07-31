@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mathematical Operations</title>
+</head>
+<body>
+    <script>
+        // Function to perform addition
+        function addition() {
+            var num1 = parseFloat(prompt("Enter the first number for addition:"));
+            var num2 = parseFloat(prompt("Enter the second number for addition:"));
+            var result = num1 + num2;
+            alert("Addition Result: " + result);
+        }
+
+        // Function to perform subtraction
+        function subtraction() {
+            var num1 = parseFloat(prompt("Enter the first number for subtraction:"));
+            var num2 = parseFloat(prompt("Enter the second number for subtraction:"));
+            var result = num1 - num2;
+            alert("Subtraction Result: " + result);
+        }
+
+        // Function to perform division
+        function division() {
+            var num1 = parseFloat(prompt("Enter the dividend for division:"));
+            var num2 = parseFloat(prompt("Enter the divisor for division:"));
+            if (num2 === 0) {
+                alert("Division by zero is not allowed!");
+            } else {
+                var result = num1 / num2;
+                alert("Division Result: " + result);
+            }
+        }
+
+        // Function to perform multiplication
+        function multiplication() {
+            var num1 = parseFloat(prompt("Enter the first number for multiplication:"));
+            var num2 = parseFloat(prompt("Enter the second number for multiplication:"));
+            var result = num1 * num2;
+            alert("Multiplication Result: " + result);
+        }
+
+        // Call the appropriate function based on user choice
+        var operation = prompt("Choose an operation: \n1. Addition \n2. Subtraction \n3. Division \n4. Multiplication");
+        if (operation === '1') {
+            addition();
+        } else if (operation === '2') {
+            subtraction();
+        } else if (operation === '3') {
+            division();
+        } else if (operation === '4') {
+            multiplication();
+        } else {
+            alert("Invalid choice! Please choose a valid operation.");
+        }
+    </script>
+</body>
+</html>

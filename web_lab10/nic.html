@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Year of Birth from NIC</title>
+</head>
+<body>
+    <script>
+        // Function to get the year of birth from NIC
+        function getYearOfBirth() {
+            // Prompt the user to enter the NIC number
+            var nicNumber = prompt("Enter the student's NIC number:");
+
+            // Check if the NIC number is valid and has the correct format (10 or 12 characters)
+            if (nicNumber.length !== 10 && nicNumber.length !== 12) {
+                alert("Invalid NIC number! Please enter a valid NIC number.");
+            } else {
+                // Extract the year of birth from the NIC number based on its format
+                var yearOfBirth;
+                if (nicNumber.length === 10) {
+                    yearOfBirth = "19" + nicNumber.substring(0, 2);
+                } else {
+                    yearOfBirth = nicNumber.substring(0, 4);
+                }
+
+                // Display the year of birth to the user
+                alert("The year of birth is: " + yearOfBirth);
+            }
+        }
+
+        // Call the getYearOfBirth() function when the page is loaded
+        getYearOfBirth();
+    </script>
+</body>
+</html>
