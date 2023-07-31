@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car Registration Form</title>
+</head>
+<body>
+<form >
+	<fieldset>
+<legend>Car Registration </legend>
+
+<label for="owner_name">Owner Name</label>
+<input type="text" name="owner_name" id="owner_name" placeholder="Owner name"><br><br>
+
+<label for="email">Email</label>
+<input type="email" name="email" id="email" placeholder="Email">
+<br><br>
+
+<label for="phone">Phone</label>
+<input type="tel" name="phone" id="phone" placeholder="Phone number">
+<br><br> 
+	
+<label for="country">Country</label>
+<select name="country" id="country">
+<option value="Sri Lanka">Sri Lanka</option>
+</select><br><br>
+
+
+<label for="car_model">Car Model</label>
+<input type="text" name="car_model" id="car_model" value="">
+<br><br>
+
+<label for="manufacture">Manufacture Year</label>
+
+<select name="year" id="year">
+	<option value="Select year">select year</option>
+<option value="2023">2023</option>
+<option value="2022">2022</option>
+<option value="2021">2021</option>
+<option value="2020">2020</option>
+</select>
+<br><br>
+<label for="transmission">Transmission</label>
+<input type="radio" name="transmission" id="manual" value="Manual">
+<label for="manual">Manual</label>
+<input type="radio" name="transmission" id="auto" value="Auto">
+<label for="auto">Auto</label>
+<br>
+<label for="other">Other</label>
+	<textarea name="message" rows="10" cols="30">.</textarea><br>
+<input type="checkbox" name="terms" id="terms" value="1">
+<label for="terms">I agree to the conditions and terms</label>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+	</fieldset>
+</form>
+</body>
+</html>
